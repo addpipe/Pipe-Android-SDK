@@ -2,6 +2,11 @@
 
 [Pipe](https://addpipe.com/) handles recording video from web and mobile, all the different file formats, ensures secure storage & delivery and has the JS and Webhook APIs needed for a seamless integration.
 
+# SDK Version
+MinSDKVersion:  API 17 (Jelly Bean)
+
+MaxSDKVersion: API Level 24 (Android 6.X)
+
 # How to setup
 * Create an android project
 * Add Pipe android SDK in your project
