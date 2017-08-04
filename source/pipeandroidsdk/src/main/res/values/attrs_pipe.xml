@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="PipeRecorder">
+
+        <attr name = "accountHash" format = "string"/>
+    </declare-styleable>
+</resources>

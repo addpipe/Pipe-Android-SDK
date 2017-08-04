@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.pipe.pipeandroidsdk.RecordVideoChooseActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <VideoView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/videoView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#99767272">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RETAKE"
+            android:id="@+id/button_chooseVideo_retake"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="USE VIDEO"
+            android:id="@+id/button_chooseVideo_UseVideo"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:layout_marginBottom="15dp" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#99767272">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:id="@+id/button_recordVideo_cancel"
+            android:layout_weight="0.2"
+            android:background="#00000000"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical|left" />
+
+        <ImageButton
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/take_photo"
+            android:src="@drawable/take_photo_selector"
+            android:onClick="clickedTakePhoto"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#99767272">
+
+        <ImageButton
+            android:id="@+id/popup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/action_popup"
+            android:src="@drawable/popup"
+            android:onClick="clickedPopupSettings"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00:00:00"
+            android:id="@+id/textview_recordVideo_duration"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/switch_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/switch_to_front_camera"
+            android:src="@drawable/switch_camera"
+            android:onClick="clickedSwitchCamera"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/prefs_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+    
+    <FrameLayout
+        android:id="@+id/locker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:id="@+id/hide_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:id="@+id/popup_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF" />
+
+</FrameLayout>
