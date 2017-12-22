@@ -61,7 +61,7 @@ public class NetworkUtil {
                     .build();
 
             Request request = new Request.Builder()
-                    .url("https://s1.addpipe.com/1.3/uploadFromMobile.php")
+                    .url("https://s3b.addpipe.com/upload")
                     .post(requestBody)
                     .addHeader("boundary", boundaryString)
                     .build();
