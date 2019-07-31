@@ -1,3 +1,10 @@
+# The SDK is no longer maintaned
+In favor of a POST API which can be used by:
+* any server-side app
+* any mobile app regardless of the platform (Objective C, Java, HTML &JS, etc.)
+
+Email us at hello@addpipe.com for further details.
+
 # Pipe-Android-SDK
 
 [Pipe](https://addpipe.com/) handles recording video from web and mobile, all the different file formats, ensures secure storage & delivery and has the JS and Webhook APIs needed for a seamless integration.
